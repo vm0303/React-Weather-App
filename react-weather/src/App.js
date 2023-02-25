@@ -1,24 +1,33 @@
-
 import './App.css';
-import UilReact from '@iconscout/react-unicons/icons/uil-react'
 import QuickCities from "./components/QuickCities";
+import Inputs from "./components/inputs";
+import TimeTitleLocation from "./components/TimeTitleLocation";
+import TempAndDetails from "./components/TempAndDetails";
 
 function App() {
-  return (
-    <div className="App">
-        <div className="text-content">
-            <h1 className="text-title">WeathAware</h1>
-            <div className="info">
-                <p>Look up the weather from various cites across the world!</p>
+    const handleTheSearch = (searchData) => {
+        console.log(searchData);
+    }
+    return (
+        <div className="App">
+            <div className="text-content">
+                <h1 className="text-title">WeathAware</h1>
+                <div className="info">
+                    <p>Look up the weather from various cites across the world!</p>
+                </div>
             </div>
-        </div>
 
-        <div className="mx-auto-max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-sky-700 to-cyan-300 h-fit shadow-xl shadow-gray-400">
-        <QuickCities/>
-        </div>
+            <div className="max-w-screen-md mx-auto mt-4 p-1 px-32 bg-gradient-to-br from-sky-700 to-cyan-500 h-fit shadow-xl shadow-stone-700
+       sm:p-1 sm:px-10 old-mobile:max-w-[85%] old-mobile:p-1  smaller-mobile:max-w-[85%] smaller-mobile:p-1">
+                <QuickCities/>
+                <Inputs onSearchChange={handleTheSearch}/>
 
-    </div>
-  );
+                <TimeTitleLocation/>
+                <TempAndDetails/>
+            </div>
+
+        </div>
+    );
 }
 
 export default App;
