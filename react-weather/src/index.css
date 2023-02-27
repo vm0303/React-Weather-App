@@ -8,8 +8,8 @@ body {
     width: 100%;
 
     background-image: linear-gradient(
-            to right,
-            #080808, #1f2021
+            to right top,
+            #080808, #1f2123
     );
 
 }

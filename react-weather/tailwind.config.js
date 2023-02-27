@@ -9,9 +9,10 @@ module.exports = {
                 'smaller-mobile': '280px',
                 // => @media (min-width: 280px) { ... }
 
-                'old-mobile': '375px',
-                // => @media (min-width: 375px) { ... }
-
+                'old-mobile': '360px',
+                // => @media (min-width: 360px) { ... }
+                'nexus-mobiles': '395px',
+                // => @media (min-width: 395px) { ... }
 
                 'sm': '640px',
                 // => @media (min-width: 640px) { ... }
