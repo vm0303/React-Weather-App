@@ -1,7 +1,8 @@
 # React-Weather-App
 
-In college, I did a simple weather app using Ajax calls and free weather APIs. However, I forgot to save my old project
+In college, I coded a simple weather app using JavaScript Ajax calls  and a free weather API. However, I forgot to save my old project
 and lost it when I did a factory reset on my whole computer.
+
 So, I decided to start this project from scratch, but use React JS and Tailwind CSS to make the website more modern and
 cool!
 
