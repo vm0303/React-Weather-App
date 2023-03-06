@@ -72,11 +72,12 @@ function App() {
                                                    href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes "
                                                    rel="noreferrer"
                                                    target="_blank">here</a>.</p>
-                    <p className="small-info-with-border">Example: "Paris, TX, US"</p>
-                    <p className="small-info">As for the countries that does <b>NOT</b> have a state associated with
+                    <p className="small-info-with-border">Example: "Paris, TX , US"</p>
+                    <p className="small-info-with-border second-color">Example: "Mumbai, Maharashtra, IN" </p>
+                    <p className="small-info">As for countries that does <b>NOT</b> have a state associated with
                         that city, type in only the city's name and
                         the 2-letter country code where that city resides.</p>
-                    <p className="small-info-with-border second-color">Example: "London, CA"</p>
+                    <p className="small-info-with-border">Example: "London, CA"</p>
                     <p className="small-info">Keep in mind that not every city or town can be found in any country
                         because the data from OpenWeatherMap API is limited and returns a 404 error stating that it
                         can't find that city.
