@@ -80,7 +80,9 @@ function App() {
                    </p>
                     <p className="small-info">The solution for this is to use the location icon to get the exact
                         location of the city or town you reside in since it goes by the latitude and longitude coordinates.
-
+                    </p>
+                    <p className="side-info">Side Note: The background of the weather dashboard changes color when the temp of a city or town
+                        is higher than 68 °F.
                     </p>
                 </div>
 
