@@ -1,5 +1,6 @@
 import {DateTime} from "luxon";
 import {toast} from 'react-toastify';
+
 const API_KEY = process.env.REACT_APP_API_KEY;
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
@@ -11,13 +12,11 @@ const getWeatherData = (infoType, searchCity) => {
     theURL.search = new URLSearchParams({...searchCity, appid: API_KEY});
 
     return fetch(theURL)
-        .then((res) =>
-        {
-            if (!res.ok)
-            {
+        .then((res) => {
+            if (!res.ok) {
                 toast.error("Error: Either the city you typed is spelled wrong or it doesn't exist at all.")
             }
-           return res.json()
+            return res.json();
         })
 
 };

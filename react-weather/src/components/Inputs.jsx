@@ -7,19 +7,13 @@ import 'react-toastify/dist/ReactToastify.css';
 function Inputs({setQuery, units, setUnits}) {
 
 
-
-
-
-
     const [theCityName, setCityName] = useState("");
 
     const handleSearch = () => {
         if (theCityName !== '') {
             setQuery({q: theCityName})
 
-        }
-        else
-        {
+        } else {
             toast.error("ERROR: The input field is blank.")
         }
 

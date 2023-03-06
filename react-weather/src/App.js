@@ -66,22 +66,27 @@ function App() {
                         that have the same exact name in any country.</p>
                     <p className="small-info">However, the solution for this is simple.
                         If any country has a state associated with a city or a town, then you type in the
-                        name of that city or town, the state where that city or town resides, and the 2-letter country code,
+                        name of that city or town, the state where that city or town resides, and the 2-letter country
+                        code,
                         which can be found&nbsp;<a className="iso-codes-link"
-                                      href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes "
-                                      rel="noreferrer"
-                                      target="_blank">here</a>.</p>
+                                                   href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes "
+                                                   rel="noreferrer"
+                                                   target="_blank">here</a>.</p>
                     <p className="small-info-with-border">Example: "Paris, TX, US"</p>
-                    <p className="small-info">As for the countries that does <b>NOT</b> have a state associated with that city, type in only the city's name and
+                    <p className="small-info">As for the countries that does <b>NOT</b> have a state associated with
+                        that city, type in only the city's name and
                         the 2-letter country code where that city resides.</p>
                     <p className="small-info-with-border second-color">Example: "London, CA"</p>
                     <p className="small-info">Keep in mind that not every city or town can be found in any country
-                        because the data from OpenWeatherMap API is limited and returns a 404 error stating that it can't find that city.
-                   </p>
-                    <p className="small-info">The solution for this is to use the location icon to get the exact
-                        location of the city or town you reside in since it goes by the latitude and longitude coordinates.
+                        because the data from OpenWeatherMap API is limited and returns a 404 error stating that it
+                        can't find that city.
                     </p>
-                    <p className="side-info">Side Note: The background of the weather dashboard changes color when the temp of a city or town
+                    <p className="small-info">The solution for this is to use the location icon to get the exact
+                        location of the city or town you reside in since it goes by the latitude and longitude
+                        coordinates.
+                    </p>
+                    <p className="side-info">Side Note: The background of the weather dashboard changes color when the
+                        temp of a city or town
                         is higher than 68 °F.
                     </p>
                 </div>
