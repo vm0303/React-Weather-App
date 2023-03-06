@@ -3,13 +3,3 @@
 @tailwind utilities;
 
 
-body {
-    height: 100%;
-    width: 100%;
-
-    background-image: linear-gradient(
-            to right top,
-            #080808, #1f2123
-    );
-
-}

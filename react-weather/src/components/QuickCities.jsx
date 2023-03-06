@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function QuickCities() {
+function QuickCities({setQuery}) {
     const cities = [
         {
             id: 1,
@@ -29,7 +29,9 @@ function QuickCities() {
         <div className="flex items-center justify-around my-6 ">
             {cities.map((theCity) => (
                 <button key={theCity.id}
-                        className=" text-white 2xl:text-3xl lg:text-2xl  md:text-xl sm:text-lg  old-mobile:text-[13px] smaller-mobile:text-[9px] font-medium ">{theCity.title}</button>
+                        className=" text-white 2xl:text-3xl lg:text-2xl  md:text-xl sm:text-lg old-mobile:text-[11px] smaller-mobile:text-[9px] font-medium"
+                        onClick={() => setQuery({q: theCity.title})}>
+                    {theCity.title}</button>
             ))}
         </div>
 
