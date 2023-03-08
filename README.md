@@ -7,7 +7,7 @@ So, I decided to start this project from scratch, but use React JS and Tailwind 
 cool!
 
 The weather app will have hourly and daily forecasts, a location tagger to get your current location, the local time and
-date of the place, and React Toasty to let users know that their request is being processed.
+date of the place, and React Toastify to let users know that their request is being processed.
 
 Shoutout to [Yash](https://github.com/theyashpatel) for his amazing tutorial on YouTube!
 
