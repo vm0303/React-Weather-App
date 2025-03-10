@@ -9,15 +9,21 @@ console.log(API_KEY);
 const getWeatherData = (infoType, searchCity) => {
 
     const theURL = new URL(BASE_URL + "/" + infoType);
+    console.log(theURL.toString());
     theURL.search = new URLSearchParams({...searchCity, appid: API_KEY});
 
     return fetch(theURL)
         .then((res) => {
             if (!res.ok) {
-                toast.error("Error: Either the city you typed is spelled wrong or it doesn't exist at all.")
+                throw new Error(`Error: ${res.status} - ${res.statusText}`);
             }
             return res.json();
         })
+        .catch((error) => {
+            console.error("Fetch error: ", error);
+            toast.error("Failed to fetch weather data. Please try again later.");
+            return null;
+        });
 
 };
 

@@ -91,7 +91,6 @@ function App() {
                         is higher than 68 °F.
                     </p>
                 </div>
-
             </div>
 
             <div className={`max-w-screen-md mx-auto mt-4 p-1 px-32 bg-gradient-to-br  h-fit shadow-xl shadow-stone-700
